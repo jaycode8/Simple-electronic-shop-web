@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accounts</title>
+    <link href="techno.css" rel="stylesheet">
+    <script src="techno.js"></script>
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).on('click','ul li',function(){
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+
+<!-- ---------------------------header------------------------ -->
+        <div class="header">
+            <div class="nav-bar">
+                <img src="images/logo3.png" class="logo">
+                <nav id="nav">
+                    <ul onclick="navlist()">
+                        <li><a href="techno.html">Home</a></li>
+                        <li><a href="all.html">Products</a></li>
+                        <li><a href="accounts.html" class="active">Accounts</a></li>
+                        <li><a href="">Shops</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </nav>
+                <i class="fa fa-bars" id="menubtn" onclick="menutoggle()"></i>
+                <a href="cart.html"><img src="images/cart.png" id="cart"></a>
+            </div>
+<!-- ----------------------------featured products------------------------------------------ -->
+            <div class="account">
+                <div class="card">
+                    <div class="inner" id="card">
+                        <div class="log">
+                            <h2>LOGING</h2>
+                            <form>
+                                <input type="text" placeholder="UserName">
+                                <i class="far fa-eye" id="show" onclick="rayc()"></i>
+                                <i class="far fa-eye-slash" id="hidden" onclick="rayc()"></i>
+                                <input type="password" placeholder="Password" id="myinput">
+                                <input type="submit" value="Log In" class="button">
+                            </form>
+                            <button id="logbtn" class="button" onclick="btns()">New</button>
+                            <a href="">forgot password</a>
+                        </div>
+                        <div class="reg">
+                            <h2>REGESTRATION</h2>
+                            <form name="myForm" onsubmit="return(validate())">
+                                <i class="fas fa-exclamation-circle" id="icon1"></i>
+                                <input type="text" placeholder="UserName" name="user" id="inputname">
+                                <i class="fas fa-exclamation-circle" id="icon2"></i>
+                                <input type="email" placeholder="EmailAdress" name="email" id="inputemail">
+                                <i class="fas fa-exclamation-circle" id="icon3"></i>
+                                <input type="password" placeholder="Password" name="passw" id="inputpss">
+                                <i class="fas fa-exclamation-circle" id="icon4"></i>
+                                <input type="password" placeholder="Confirm" name="conf" id="inputconf">
+                                <input type="submit" value="SUBMIT" class="button">
+                            </form>
+                            <button id="regbtn" class="button" onclick="btns()">HAVE ACCOUNT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- -------------------------------footer----------------------- -->
+        <div class="footer">
+            <div class="small">
+                <div class="row">
+                    <div class="col-3">
+                        <h3>Download our App</h3>
+                        <p>Download App for Android and ios mobile phone</p>
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                    <div class="col-3 me">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="">Coupons</a></li>
+                            <li><a href="">Blog Post</a></li>
+                            <li><a href="">Return Policy</a></li>
+                            <li><a href="">Join Affiliates</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 yu">
+                        <h3>Follow us on</h3>
+                        <i class="fab fa-facebook" id="fb"></i>
+                        <i class="fab fa-instagram" id="ig"></i>
+                        <i class="fab fa-twitter" id="tw"></i>
+                        <i class="fab fa-youtube" id="yt"></i>
+                    </div>
+                    
+                </div>
+                <hr/>
+                <small>copyright @jaymoh</small>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
